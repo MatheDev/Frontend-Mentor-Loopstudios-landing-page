@@ -1,0 +1,108 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+body{
+  height: 100vh;
+}
+
+.content-page{
+  padding: 20px;
+}
+
+
+img{
+  max-width: 100%
+}
+
+/* Reusable class */
+.title{
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family:'Josefin Sans', sans-serif;
+  color: var(--Black);
+   margin: 30px 0;
+}
+
+/* Section banner */
+.banner{
+  width: 100%;
+  height: 60vh;
+  background: url('images/mobile/image-hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  
+}
+
+.banner h1{
+  color: var(--White);
+  border: 1px solid var(--White);
+  padding: 20px;
+  font-size: 2rem;
+  text-align: left;
+}
+
+/* Demonstration */
+.description{
+  font-family: 'Alata', sans-serif;
+  color: var(--Dark-Gray);
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Section creations */
+.creations{
+  width: 100%;
+
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+} 
+
+.creations-img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--white);
+  position: relative;
+}
+
+.creation-card{
+  position: relative;
+}
+
+.creation-card h3{
+  position: absolute;
+  color: var(--White);
+  bottom: 35px;
+  left: 20px;
+}
